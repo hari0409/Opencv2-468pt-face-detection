@@ -8,6 +8,7 @@ if tolerance is greater than the minimum,then teh images are similar
 else
 They are diffrent
 ![proj1](https://user-images.githubusercontent.com/73524123/116968547-5428c600-acd2-11eb-8f7e-e64cc9a778b0.png)
+
 Result is :
 
 ![image](https://user-images.githubusercontent.com/73524123/116968698-9eaa4280-acd2-11eb-83d9-876d6e733add.png)
