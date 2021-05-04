@@ -30,9 +30,10 @@ def photo(url,n):
     for i in range(0, int(len(ll)/n), 1):
         for j in range(i + 1,int(len(ll)/n), 1):
             try:
-                m = (ll[j][1] - ll[i][1]) / (ll[j][0] - ll[i][0])
+                m = ((ll[j][1] - ll[i][1])**2+(ll[j][0] - ll[i][0])**2)**(0.5)
             except ZeroDivisionError:
                 m = 0
             ans.append(m)
     print("Calculation Finished")
+    print(len(ans))
     return ans
