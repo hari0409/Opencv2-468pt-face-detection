@@ -35,5 +35,4 @@ def photo(url,n):
                 m = 0
             ans.append(m)
     print("Calculation Finished")
-    print(len(ans))
     return ans
