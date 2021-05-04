@@ -6,8 +6,8 @@ The same if done for the test image.
 The the number of similar slopes in the array is calculated using numpy and the tolerance is calulated 
 if tolerance is greater than the minimum,then teh images are similar
 else
-They are diffrent!
-[proj1](https://user-images.githubusercontent.com/73524123/116968547-5428c600-acd2-11eb-8f7e-e64cc9a778b0.png)
+They are diffrent
+![proj1](https://user-images.githubusercontent.com/73524123/116968547-5428c600-acd2-11eb-8f7e-e64cc9a778b0.png)
 
 NOTE: the value of tolerance,number loop for the elements of the array can be modified for faster processing But,accuracy decreases
 You can also see the meshes if you want by running the two_img_mesh.py for the same images that you use for comparision.
