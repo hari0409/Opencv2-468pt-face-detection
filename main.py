@@ -18,4 +18,36 @@ print("Found Tolerance==",x)
 # Print the Result
 definer(x,tol)
 end=time.time()
-print("Runtime:",end-start)
+print("Runtime:",end-start)from photo468 import photo
+from definer import definer
+from approxiator import predict
+import time
+def analyser(name1,name2):
+    start=time.time()
+    # Tolerance that can be accepted
+    tol=0.478
+
+    # Giving the image to process and give all the slopes
+    m1=photo(f"Resources/scanned/{name1}.jpg",n=10)
+    m2=photo(f"Resources/scanned/{name2}.jpg",n=10)
+
+    # Predict the value of Tolerance
+    end=time.time()
+    x=predict(m1,m2)
+    print("Found Tolerance=",x)
+
+    import winsound
+    frequency = 40  # Set Frequency To 2500 Hertz
+    duration = 10000  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+
+    # Print the Result
+    definer(x,tol)
+
+    print("Runtime:",end-start)
+    return 0
+print(analyser("a2","r1"))
+print(analyser("a2","r2"))
+print(analyser("a1","r1"))
+
+
